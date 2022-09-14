@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "firebase": "^9.9.4",
+    "firebase-admin": "^11.0.1",
+    "formidable": "^2.0.1",
+    "mongodb": "^4.9.1",
+    "mysql": "^2.18.1"
+  }
+}
