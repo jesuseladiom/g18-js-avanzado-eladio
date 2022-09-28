@@ -510,7 +510,7 @@ clear
 
 ```
 
-### Comandos Git
+### [Comandos Git](git.md)
 
 #### Commits Atómicos
 
@@ -567,6 +567,44 @@ git restore --staged namefile.txt
 git commit -m "conventionalCommitScope: mi mensaje"
 
 ```
+
+#### Semantica de mensajes "commit"
+
+Un pequeño cambio en nuestros mensajes commit  puede convertirnos en mejores programadores.
+
+Formato: `<tipo>(<alcance>): <asunto>`
+
+`<alcance>` es opcional
+
+## Ejemplo
+
+```
+feat: add hat wobble
+^--^  ^------------^
+|     |
+|     +-> Resumen en tiempo presente.
+|
++-------> Tipo: chore(tarea), docs(documentos), feat(logro), fix(corrección), refactor(refactorización), style(estilo), or test(prueba).
+```
+
+Mas ejemplos:
+
+- `feat`: (nueva función para el usuario, no una nueva función para el script de compilación)
+- `fix`: (corrección de errores para el usuario, no una corrección para un script de compilación)
+- `docs`: (cambios en la documentación)
+- `style`: (formato, falta de punto y coma, etc.; no hay cambio de código de producción)
+- `refactor`: (refactorización de código de producción, por ejemplo, cambio de nombre de una variable)
+- `test`: (agregando pruebas faltantes, refactorizando pruebas; sin cambio de código de producción)
+- `chore`: (actualización de tareas grunt, etc.; sin cambio de código de producción)
+
+Referencias:
+
+- https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
+- https://www.conventionalcommits.org/
+- https://seesparkbox.com/foundry/semantic_commit_messages
+- http://karma-runner.github.io/1.0/dev/git-commit-msg.html
+
+Esta es una traduccion al español de [Josh Buchea] (https://gist.github.com/joshbuchea) por [Daniel Gloria](https://gist.github.com/dannielgloria).
 
 #### Remoto
 
@@ -753,3 +791,4 @@ Big Data es un término que describe el gran volumen de datos, tanto estructurad
 - **Path:** Es una ruta o dirección donde se encuentra alojado un recurso en un sistema de archivos. Existen rutas relativas como ../../my-docs o absolutas como C:\users\juan\Documents\tarea\tesis.doc
 - **Puerto:** un lugar donde se abre una conexion para acceder a un servicio.
 - **Dummy:** Es un dato o elemento de prueba, sirve para simular datos.
+- **Scaffolding:** Estructura de carpetas y archivos de un proyecto de desarrollo

@@ -11,7 +11,6 @@ const server = http.createServer((request, response) => {
     let mymeType = { 'Content-type': 'text/plain' };7
     let jsonResp;
 
-    arreglo= {};
     switch(path) {
         case '/':
             status = 200; // ok
